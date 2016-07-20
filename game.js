@@ -6,16 +6,18 @@ var frames = [
 
 var total = 0
 frames.reduce(function(prev, current, index, frames) {
-    if(prev[0] === 10) {
-      var strike = prev.reduce(function (ball1, ball2) {ball1 + ball2})
-      console.log(strike, ' is a strike')
-    } else if (prev[0] !== 10 && prev + current === 10) {
-      var spare = prev.reduce(function ())
-      console.log()
-    }
+
+  // if(prev === 10) {
+  //   var strike = prev.reduce(function (ball1, ball2) {ball1 + ball2})
+  //   console.log(strike, ' is a strike')
+  // } else if (prev !== 10 && prev + current === 10) {
+  //   //var spare = prev.reduce(function ())
+  //   console.log()
+  // }
+
     console.log(prev, current, index, frames.length)
 })
-console.log(total)
+
 
 // if(a === 10) {
 //   strike + (a + b)
